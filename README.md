@@ -15,7 +15,8 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 - [Open Command Prompt](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/)
 - Verify Python installation by typing `Python -v` without the quotes. The output should list the version of Python installed in step 1.
 - Change directories in the command line to be the directory in which you downloaded COS_LeadUploadFormatter_UI.py
-  - e.g. `CD C:\Users\{{USERNAME}}\Downloads`
+  - e.g. `cd C:\Users\{{USERNAME}}\Downloads`
 - Once in the directory, install the dependencies by running the following:
   - pip install streamlit pandas re io base64
 - When installation completes, the program is ready to run. Do so by typing `streamlit run .\COS_LeadUploadFormatter_UI.py`
+  - Pro tip: `.\COS_LeadUploadFormatter_UI.py` is a lot to type. When executing the above step, you can press TAB to autocomplete. For example, `streamlit run .\COS` TAB should autocomplete the file name.
