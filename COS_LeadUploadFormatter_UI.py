@@ -33,7 +33,21 @@ def is_valid_phone(phone):
 st.header('Club OS Mass Lead Upload Formatter')
 st.markdown('This tool will remove invalid emails and phone numbers from the uploaded spreadsheet.\n - If that results in no contact information for a row in the spreadsheet then that row will be removed'
             '\n - The supplied file can be either CSV or XLSX'
-            '\n - Please always double check the output. Reach out to Daniel if you encounter any errors.')
+            '\n - It is important to know that this program **ONLY** recognizes the [Mass Lead Upload](https://docs.google.com/spreadsheets/d/1TdDRkGD3GAybdcoGOje7oNIxfIOIIMME/edit#gid=320862359) spreadsheet. So you will have already needed to transpose the data provided by the client into this template.'
+
+'\n### What this does:'
+'\n- Accepts Location Name and populates it in Column A'
+'\n- Allows User to specify output file name. **Be sure to not remove `.xlsx` as the extension**'
+'\n- Verify that columns B and C are not blank. If they are, delete the row.'
+'\n- If columns I, J, and K are not valid phone number formats delete the invalid data from the cell'
+'\n- If columns D, I, J, and K are all blank, delete the row'
+'\n- Ultimately this script should remove any invalid data in the specified cells while retaining data that is valid'
+'\n### What this DOES NOT do:'
+'\n- Remove phone numbers that start with `555`'
+'\n- Validate that phone numbers are real. For example, `5128675309` will not be removed by this program'
+'\n- Validate that emails are real. For example `TotallyFakeEmailLOL@gmail.com` will not be removed by this program'
+'\n## ALWAYS DOUBLE CHECK THE OUTPUTTED FILE.'
+'\nReach out to Daniel if you notice any errors.')
 
 uploaded_file = st.file_uploader("Select Unformatted CSV or Excel File", type=['csv', 'xlsx'])
 
