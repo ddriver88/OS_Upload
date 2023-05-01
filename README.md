@@ -24,6 +24,7 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 Once the command above is run it will open a Browser window with the UI. It is important to know that this program **ONLY** recognizes the [Mass Lead Upload](https://docs.google.com/spreadsheets/d/1TdDRkGD3GAybdcoGOje7oNIxfIOIIMME/edit#gid=320862359) spreadsheet. So you will have already needed to transpose the data provided by the client into this template.
 
 ### What this does:
+- Verify that columns B and C are not blank. If they are, delete the row.
 - If columns I, J, and K are not valid phone number formats delete the invalid data from the cell
 - If columns D, I, J, and K are all blank, delete the row
 - Ultimately this script should remove any invalid data in the specified cells while retaining data that is valid
