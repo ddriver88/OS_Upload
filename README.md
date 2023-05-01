@@ -11,7 +11,7 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 - Ensure you have [Python installed](https://www.python.org/downloads/)
 - When installing, be sure to Add to Path 
   - ![image](https://user-images.githubusercontent.com/26580229/235505498-0fe01c61-1ea8-4a40-90da-3cd7624e44c8.png)
-- Download COS_LeadUploadFormatter_UI.py
+- [Download COS_LeadUploadFormatter_UI.py](https://github.com/ddriver88/OS_Upload/blob/095850f335c9fc6598fa5b7b183ae259a702b6b1/COS_LeadUploadFormatter_UI.py)
 - [Open Command Prompt](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/)
 - Verify Python installation by typing `Python -v` without the quotes. The output should list the version of Python installed in step 1.
 - Change directories in the command line to be the directory in which you downloaded COS_LeadUploadFormatter_UI.py
