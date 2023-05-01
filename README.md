@@ -20,3 +20,12 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
   - pip install streamlit pandas re io base64
 - When installation completes, the program is ready to run. Do so by typing `streamlit run .\COS_LeadUploadFormatter_UI.py`
   - Pro tip: `.\COS_LeadUploadFormatter_UI.py` is a lot to type. When executing the above step, you can press TAB to autocomplete. For example, `streamlit run .\COS` TAB should autocomplete the file name.
+
+Once the command above is run it will open a Browser window with the UI. It is important to know that this program **ONLY** recognizes the [Mass Lead Upload](https://docs.google.com/spreadsheets/d/1TdDRkGD3GAybdcoGOje7oNIxfIOIIMME/edit#gid=320862359) spreadsheet. So you will have already needed to transpose the data provided by the client into this template.
+
+### What this does:
+
+
+## ALWAYS DOUBLE CHECK THE OUTPUTTED FILE.
+
+Reach out to Daniel if you notice any errors.
