@@ -75,4 +75,8 @@ if uploaded_file:
 
     if st.button("Process File"):
         xlsx_data = to_xlsx(df)
-        st.markdown(download_link(xlsx_data, output_file_name, "Download Processed File"), unsafe_allow_html=True)
+        st.download_button(
+            label="Download Processed File",
+            data=xlsx_data,
+            file_name=output_file_name,
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",)
