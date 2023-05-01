@@ -1,0 +1,21 @@
+Can you please write me a Python script that does the following:
+- Use streamlit module
+- Allow upload of either CSV or XSLX
+- Show a preview of the uploaded file
+- Allow user to specify the name of the output file
+- Column B is "First Name"
+- Column C is "Last Name"
+- Column D is "Email"
+- Column H is "Postal Code"
+- Column I is "Home Phone"
+- Column J is "Mobile Phone"
+- Column K is "Work Phone"
+- verify that columns B and C are not blank. If they are, delete the row.
+- verify that column D is a valid email format using regex
+- verify that column I is a valid phone number format using regex
+- verify that column J is a valid phone number format using regex
+- verify that column K is a valid phone number format using regex
+- If columns I, J, and K are not valid phone number formats delete the invalid data from the cell
+- If columns D, I, J, and K are all blank, delete the row
+- Ultimately this script should remove any invalid data in the specified cells while retaining data that is valid
+- Contain a Download button that will allow the user to download the processed file strictly in .xlsx format only
