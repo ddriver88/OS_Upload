@@ -19,3 +19,7 @@ Can you please write me a Python script that does the following:
 - If columns D, I, J, and K are all blank, delete the row
 - Ultimately this script should remove any invalid data in the specified cells while retaining data that is valid
 - Contain a Download button that will allow the user to download the processed file strictly in .xlsx format only
+
+st.header('Club OS Mass Lead Upload Formatter')
+st.markdown('This tool will remove invalid emails and phone numbers from the uploaded spreadsheet.\n - If that results in no contact information for a row in the spreadsheet then that row will be removed'
+            '\n - The supplied file can be either CSV or XLSX'
