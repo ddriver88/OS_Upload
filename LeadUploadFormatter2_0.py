@@ -40,10 +40,10 @@ def is_valid_email(email):
     return re.match(regex, email) if email and not isinstance(email, float) else False
 
 def is_valid_phone(phone):
-    regex = r'^\+?\d{1,4}[-.\s]?\(?\d{1,4}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$'
+    regex = r'^\+?(\d[\s-.\(\)]?){10,15}$'
     if phone and not isinstance(phone, float):
         match = re.match(regex, phone)
-        return match and len(re.findall(r'\d', phone)) >= 10
+        return bool(match)
     return False
 
 st.header('Club OS Mass Lead Upload Formatter')
