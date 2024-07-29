@@ -8,6 +8,7 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 **I would recommend using COS_LeadUploadFormatter_UI.py exclusively.**
 
 ## To Use COS_LeadUploadFormatter_UI.py
+- Ensure that you have [GIT installed](https://git-scm.com/downloads) for your current OS
 - Ensure you have [Python installed](https://www.python.org/downloads/)
 - When installing, **BE SURE TO ADD TO PATH** - it's the second checkbox in the screenshot below:
   - ![image](https://user-images.githubusercontent.com/26580229/235505498-0fe01c61-1ea8-4a40-90da-3cd7624e44c8.png)
@@ -16,7 +17,7 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 - Verify Python installation by typing `Python -v` without the quotes. The output should list the version of Python installed in step 1.
 - Change directories in the command line to be the directory in which you downloaded COS_LeadUploadFormatter_UI.py
   - e.g. `cd C:\Users\{{USERNAME}}\Downloads`
-- run `chmod +x setup.sh`
+- **LINUX AND MACOS ONLY** run `chmod +x setup.sh`
 - run `./setup.sh` and all dependencies should be installed. If not, try the next step.
 - Alternatively, install the dependencies manually by running the following:
   - `pip install streamlit pandas re io base64`
