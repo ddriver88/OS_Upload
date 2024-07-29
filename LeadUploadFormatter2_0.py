@@ -40,12 +40,11 @@ def is_valid_email(email):
     return re.match(regex, email) if email and not isinstance(email, float) else False
 
 def is_valid_phone(phone):
-    regex = r'^\+?(\d[\s-.\(\)]?){10,15}$'
+    regex = r'^\+?[\d\s\-().]{10,15}$'
     if phone and not isinstance(phone, float):
         match = re.match(regex, phone)
         return bool(match)
     return False
-
 st.header('Club OS Mass Lead Upload Formatter')
 st.markdown('This tool will remove invalid emails and phone numbers from the uploaded spreadsheet.\n - If that results in no contact information for a row in the spreadsheet then that row will be removed'
             '\n - The supplied file can be either CSV or XLSX'
