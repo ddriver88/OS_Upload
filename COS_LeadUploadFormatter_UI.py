@@ -1,5 +1,28 @@
-import streamlit as st
-import pandas as pd
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Check and install required packages
+try:
+    import streamlit as st
+except ImportError:
+    install('streamlit')
+    import streamlit as st
+
+try:
+    import pandas as pd
+except ImportError:
+    install('pandas')
+    import pandas as pd
+
+try:
+    from openpyxl import Workbook
+except ImportError:
+    install('openpyxl')
+    from openpyxl import Workbook
+
 import re
 from io import BytesIO
 import base64
@@ -11,7 +34,6 @@ def to_xlsx(dataframe):
     writer.book.save(output)  # Update this line
     xlsx_data = output.getvalue()
     return xlsx_data
-
 
 def download_link(data, filename, text):
     b64 = base64.b64encode(data).decode()
@@ -28,7 +50,6 @@ def is_valid_phone(phone):
         match = re.match(regex, phone)
         return match and len(re.findall(r'\d', phone)) >= 11
     return False
-
 
 st.header('Club OS Mass Lead Upload Formatter')
 st.markdown('This tool will remove invalid emails and phone numbers from the uploaded spreadsheet.\n - If that results in no contact information for a row in the spreadsheet then that row will be removed'
