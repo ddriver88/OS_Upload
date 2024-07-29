@@ -11,6 +11,7 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 - Ensure that you have [GIT installed](https://git-scm.com/downloads) for your current OS
 - Ensure you have [Python installed](https://www.python.org/downloads/)
 - When installing, **BE SURE TO ADD TO PATH** - it's the second checkbox in the screenshot below:
+- Click Customize Installation and be sure to install for all users.
   - ![image](https://user-images.githubusercontent.com/26580229/235505498-0fe01c61-1ea8-4a40-90da-3cd7624e44c8.png)
 - [Download COS_LeadUploadFormatter_UI.py](https://github.com/ddriver88/OS_Upload/blob/095850f335c9fc6598fa5b7b183ae259a702b6b1/COS_LeadUploadFormatter_UI.py)
 - [Open Command Prompt](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/)
