@@ -9,7 +9,7 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 
 ## To Use COS_LeadUploadFormatter_UI.py
 - Ensure that you have [GIT installed](https://git-scm.com/downloads) for your current OS
-- Ensure you have [Python installed](https://www.python.org/downloads/)
+- Ensure you have [Python installed](https://www.python.org/downloads/release/python-380/)
 - When installing, **BE SURE TO ADD TO PATH** - it's the second checkbox in the screenshot below:
 - Click Customize Installation and be sure to install for all users.
   - ![image](https://user-images.githubusercontent.com/26580229/235505498-0fe01c61-1ea8-4a40-90da-3cd7624e44c8.png)
