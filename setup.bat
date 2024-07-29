@@ -1,3 +1,4 @@
+@echo off
 
 REM Check if virtual environment directory exists
 if not exist "venv" (
@@ -7,7 +8,7 @@ if not exist "venv" (
 )
 
 REM Activate virtual environment
-call venv\Scripts\activate
+call venv\Scripts\activate.bat
 echo Virtual environment activated.
 
 REM Upgrade pip and install dependencies
@@ -16,4 +17,4 @@ pip install -r requirements.txt
 echo Dependencies installed.
 
 REM Run the main application
-streamlit run LeadUploadFormatter2_0.py
+venv\Scripts\python -m streamlit run LeadUploadFormatter2_0.py
