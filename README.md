@@ -8,24 +8,28 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 **I would recommend using COS_LeadUploadFormatter_UI.py exclusively.**
 
 ## To Use COS_LeadUploadFormatter_UI.py
-- Ensure that you have [GIT installed](https://git-scm.com/downloads) for your current OS
 - Ensure you have [Python installed](https://www.python.org/downloads/release/python-380/)
 - When installing, **BE SURE TO ADD TO PATH** - it's the second checkbox in the screenshot below:
 - Click Customize Installation and be sure to install for all users.
   - ![image](https://user-images.githubusercontent.com/26580229/235505498-0fe01c61-1ea8-4a40-90da-3cd7624e44c8.png)
 - [Download COS_LeadUploadFormatter_UI.py](https://github.com/ddriver88/OS_Upload/blob/095850f335c9fc6598fa5b7b183ae259a702b6b1/COS_LeadUploadFormatter_UI.py)
-- [Open Command Prompt](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/)
-- Open Windows Powershell
--   run `wsl --install` and proceed through installation
+
+### MacOS / Linux
 - Verify Python installation by typing `Python -v` without the quotes. The output should list the version of Python installed in step 1.
-- Change directories in the command line to be the directory in which you downloaded COS_LeadUploadFormatter_UI.py
-  - e.g. `cd C:\Users\{{USERNAME}}\Downloads`
-- **LINUX AND MACOS ONLY** run `chmod +x setup.sh`
+- `chmod +x setup.sh`
 - run `./setup.sh` and all dependencies should be installed. If not, try the next step.
 - Alternatively, install the dependencies manually by running the following:
   - `pip install streamlit pandas re io base64`
-- When installation completes, the program is ready to run. Do so by typing `streamlit run .\COS_LeadUploadFormatter_UI.py`
-  - Pro tip: `.\COS_LeadUploadFormatter_UI.py` is a lot to type. When executing the above step, you can press TAB to autocomplete. For example, `streamlit run .\COS` TAB should autocomplete the file name.
+- When installation completes, the program is ready to run. Do so by typing `streamlit run .\LeadUploadFormatter2_0.py`
+  - Pro tip: `.\LeadUploadFormatter2_0.py` is a lot to type. When executing the above step, you can press TAB to autocomplete. For example, `streamlit run .\Lead` TAB should autocomplete the file name.
+ 
+### Windows
+- Download [VS Code](https://code.visualstudio.com/download)
+- File > Open > Folder > OS_Upload-main
+- Click the LeadUploadFormatter2_0.py file to view it
+- [Configure the virtual environment](https://code.visualstudio.com/docs/python/environments#_using-the-create-environment-command) (venv)
+- Click the run/play button on the top right
+
 
 Once the command above is run it will open a Browser window with the UI. It is important to know that this program **ONLY** recognizes the [Mass Lead Upload](https://docs.google.com/spreadsheets/d/1TdDRkGD3GAybdcoGOje7oNIxfIOIIMME/edit#gid=320862359) spreadsheet. So you will have already needed to transpose the data provided by the client into this template.
 
