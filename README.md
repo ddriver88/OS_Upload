@@ -10,7 +10,7 @@
 
 The first two can only be run via the Command Line Interface (CLI) and may not be the best option. The first especially as the admin app does not accept CSV format for lead uploads.
 
-**I would recommend using COS_LeadUploadFormatter_UI.py exclusively.**
+**I would recommend using leadUploadFormatter3o.py exclusively.**
 
 ## To Use COS_LeadUploadFormatter_UI.py
 - Ensure you have [Python installed](https://www.python.org/downloads/release/python-380/)
@@ -26,7 +26,7 @@ The first two can only be run via the Command Line Interface (CLI) and may not b
 - Alternatively, install the dependencies manually by running the following:
   - `pip install streamlit pandas re io base64`
 - When installation completes, the program is ready to run. Do so by typing `streamlit run .\LeadUploadFormatter2_0.py`
-  - Pro tip: `.\LeadUploadFormatter2_0.py` is a lot to type. When executing the above step, you can press TAB to autocomplete. For example, `streamlit run .\Lead` TAB should autocomplete the file name.
+  - Pro tip: `.\leadUploadFormatter3o.py` is a lot to type. When executing the above step, you can press TAB to autocomplete. For example, `streamlit run .\Lead` TAB should autocomplete the file name.
  
 ### Windows
 - Download [VS Code](https://code.visualstudio.com/download)
@@ -48,7 +48,6 @@ Once the command above is run it will open a Browser window with the UI. It is i
 - Check out [prompt.txt](https://github.com/ddriver88/OS_Upload/blob/997de75428755cfba0498530894c756c0cd02c7b/prompt.txt) If you want to see exactly how this was created to work.
 
 ### What this DOES NOT do:
-- Remove phone numbers that start with `555`
 - Validate that phone numbers are real. For example, `5128675309` will not be removed by this program
 - Validate that emails are real. For example `TotallyFakeEmailLOL@gmail.com` will not be removed by this program
 
