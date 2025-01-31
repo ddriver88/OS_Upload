@@ -1,7 +1,12 @@
+### Latest Update:
+- App now remembers state upon clicking download buttons. You no longer need to re-run the file to download the second output, e.g. removedRows.csv
+- Checks if a given string is a valid phone format and filters out numbers
+  starting with forbidden prefixes (800, 888, 555, or 111)
+
 ### There are three main files:
 - CSV-to-CSV.py
 - CSV-to-XLSX.py
-- COS_LeadUploadFormatter_UI.py
+- leadUploadFormatter3o.py
 
 The first two can only be run via the Command Line Interface (CLI) and may not be the best option. The first especially as the admin app does not accept CSV format for lead uploads.
 
